@@ -1,0 +1,23 @@
+<script>
+    function randomNum(minNum, maxNum) {
+        switch (arguments.length) {
+            case 1:
+                return parseInt(Math.random() * minNum + 1, 10);
+                break;
+            case 2:
+                return parseInt(Math.random() * (maxNum - minNum + 1) + minNum, 10);
+                break;
+            default:
+                return 0;
+                break;
+        }
+    }
+    switch (randomNum(1, 2)) {
+        case 1:
+            window.location.href = "https://daisu.ke";
+            break;
+        default:
+            window.location.href = "https://daisu.ke/rickroll.mp4";
+    }
+
+</script>
